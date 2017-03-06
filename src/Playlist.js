@@ -2,8 +2,6 @@ import React from 'react';
 
 const Playlist = ({ playlist, onChange }) => {
   const handleRemoveLastSong = () => {
-    const { playlist, onChange } = this.props;
-
     onChange(playlist.slice(0, playlist.length - 1));
   };
 
